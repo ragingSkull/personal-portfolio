@@ -1,0 +1,52 @@
+.container {
+    background-image: linear-gradient(to bottom, #414141, #000000);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.container p {
+    font-size: 100px;
+    font-family: Montserrat;
+}
+
+.float_container {
+    min-height: 87vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.float_child {
+    width: 100%;
+    padding: 21px;
+}
+
+.left_child {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.dot {
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-60px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
