@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import '../styles/app.css'
 import NaviBar from '../components/navi-bar';
 import Footer from '../components/footer';
 import '@fortawesome/fontawesome-svg-core/styles.css'
