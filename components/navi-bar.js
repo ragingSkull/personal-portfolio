@@ -9,13 +9,13 @@ const NaviBar = () => {
     return (
         <div className='navbar-container'>
         <nav className='navbar'>
-            <Link className='right' href='/posts/about-me'>
+            <Link className='right !ml-60 !mr-0' href='/posts/about-me'>
                 About Me
             </Link>
             <Link className='center' href='/'>
                 <FontAwesomeIcon icon={ faHome } style={{ fontSize: 20, color: "white" }} />
             </Link>
-            <Link className='left' href='/posts/language'>
+            <Link className='left !ml-0 !mr-60' href='/posts/language'>
                 Language
             </Link>
         </nav>

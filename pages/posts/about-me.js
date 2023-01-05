@@ -2,7 +2,7 @@ export default function AboutMe() {
     const space = '\u00a0';
 
     return(
-        <div className='aboutme-container'>
+        <div className='aboutme'>
             <div className='float_container'>
                 <div className='float_child left_child'>
                     <p className='aboutMeIntro'>Hi</p>
