@@ -13,6 +13,7 @@
 
 .container p {
     font-size: 100px;
+    color: #ffffff;
 }
 
 .sub-container {
@@ -22,14 +23,15 @@
     justify-content: center;
 }
 
-@media (prefers-color-scheme: dark) {
+
+/* @media (prefers-color-scheme: dark) {
     html {
         color-scheme: dark;
     }
     body .footer {
         background-color: #000000;
     }
-}
+} */
 
 html,
 body {
@@ -53,12 +55,14 @@ a {
 .footer {
     align-items: center;
     padding: 21px;
+    background-color: #000000;
 }
 
 .footer p {
     text-align: center;
     position: relative;
     font-family: Montserrat;
+    color: #ffffff;
 }
 
 .footer p:before {
