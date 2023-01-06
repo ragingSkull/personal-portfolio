@@ -2,13 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 .index-container {
-    min-height: 82vh;
+    /* min-height: 82vh; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+    /* font-size: calc(10px + 2vmin);
+    color: white; */
     background-image: linear-gradient(to bottom, #414141, #000000);
+    height: 1002px;
 }
 
 .index-container p {
