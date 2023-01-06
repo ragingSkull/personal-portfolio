@@ -1,4 +1,4 @@
-.container {
+/* .container {
     background-image: linear-gradient(to bottom, #414141, #000000);
     flex-direction: column;
     align-items: center;
@@ -10,14 +10,7 @@
 .container p {
     font-size: 100px;
     font-family: Montserrat;
-}
-
-.float_container {
-    min-height: 87vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+} */
 
 .float_child {
     width: 100%;

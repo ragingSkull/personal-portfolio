@@ -1,35 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.index-container {
-    /* min-height: 82vh; */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* font-size: calc(10px + 2vmin);
-    color: white; */
-    background-image: linear-gradient(to bottom, #414141, #000000);
-    height: 1002px;
-}
-
-.index-container p {
-    font-size: 100px;
-    font-family: Montserrat;
-}
-
-.aboutme {
-    min-height: 82vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-    background-image: linear-gradient(to bottom, #414141, #000000);
-}
 
 @font-face {
     font-family: Montserrat;
     src: url('../public/font/montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
+.container {
+    font-family: Montserrat;
+    background-image: linear-gradient(to bottom, #414141, #000000);
+}
+
+.container p {
+    font-size: 100px;
+}
+
+.sub-container {
+    min-height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -61,16 +52,6 @@ a {
 
 * {
     box-sizing: border-box;
-}
-
-.container {
-    min-height: 87vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-    background-image: linear-gradient(to bottom, #414141, #000000);
 }
 
 .footer {
