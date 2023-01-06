@@ -1,15 +1,13 @@
 {
     "name": "example",
     "version": "0.1.0",
-    "homepage": "https://ragingskull.github.io/my-first-spa",
     "private": true,
     "scripts": {
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "watch": "npx tailwindcss -i ./styles/input.css -o ./styles/app.css --watch --minify",
-        "deploy": "gh-pages -d .next"
+        "watch": "npx tailwindcss -i ./styles/input.css -o ./styles/app.css --watch --minify"
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.2.0",
@@ -27,7 +25,6 @@
         "auto": "^10.37.6",
         "eslint": "8.26.0",
         "eslint-config-next": "13.0.0",
-        "gh-pages": "^4.0.0",
         "tailwindcss": "^3.2.4"
     }
 }
