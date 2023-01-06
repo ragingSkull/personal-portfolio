@@ -21,25 +21,3 @@
     display: inline-flex;
     justify-content: center;
 }
-
-.dot {
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-}
-
-.bounce {
-    animation-name: bounce;
-    animation-timing-function: ease;
-}
-
-@keyframes bounce {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-60px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}

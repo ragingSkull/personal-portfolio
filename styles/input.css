@@ -168,7 +168,7 @@ a {
 }
 
 .popup-content {
-    width: 313px!important;
+    width: 313px !important;
 }
 
 .dot {
@@ -179,18 +179,6 @@ a {
 .bounce {
     animation-name: bounce;
     animation-timing-function: ease;
-}
-
-@keyframes bounce {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-60px);
-    }
-    100% {
-        transform: translateY(0);
-    }
 }
 
 .aboutMe {
@@ -216,7 +204,21 @@ a {
         font-size: 50px;
     }
     .sub-container {
-        height: 86.5vh;
+        height: 91.5vh;
+    }
+    .footer p {
+        font-size: 10px;
+    }
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-30px);
+        }
+        100% {
+            transform: translateY(0);
+        }
     }
 }
 
@@ -247,7 +249,25 @@ a {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
+@media only screen and (min-width: 1200px) {
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-60px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+}
 
-/* @media only screen and (min-width: 1200px) {
-    ...
-} */
+
+/* iPhone XR */
+
+@media (min-height: 840px) {
+    .sub-container {
+        height: 93.5vh;
+    }
+}

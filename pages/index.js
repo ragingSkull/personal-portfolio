@@ -6,7 +6,7 @@ export default function Home() {
         <div className='sub-container'>
             <div className={`${ Styles.float_child} ${ Styles.left_child}`}>
             <p>WELCOME</p>
-            <p className={`${Styles.dot} ${Styles.bounce}`}>.</p>
+            <p className='dot bounce'>.</p>
         </div>
         </div>
     </div>
