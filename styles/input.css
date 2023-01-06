@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @font-face {
     font-family: Montserrat;
     src: url('../public/font/montserrat/Montserrat-VariableFont_wght.ttf');
@@ -17,7 +16,7 @@
 }
 
 .sub-container {
-    min-height: 93vh;
+    height: 93.1vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,3 +207,47 @@ a {
 .float_child img {
     padding: 20px;
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .container p {
+        font-size: 50px;
+    }
+    .sub-container {
+        height: 86.5vh;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+
+/* @media only screen and (min-width: 600px) {
+    ...
+} */
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+
+/* @media only screen and (min-width: 768px) {
+    ...
+} */
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+
+/* @media only screen and (min-width: 992px) {
+    ...
+} */
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+
+/* @media only screen and (min-width: 1200px) {
+    ...
+} */
