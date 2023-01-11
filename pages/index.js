@@ -1,13 +1,11 @@
-import Styles from '../styles/Home.module.css'
-
 export default function Home() {
   return (
-    <div className='container !max-w-none'>
+    <div className='container !max-w-none ho'>
         <div className='sub-container'>
-            <div className={`${ Styles.float_child} ${ Styles.left_child}`}>
-            <p>WELCOME</p>
-            <p className='dot bounce'>.</p>
-        </div>
+            <div className='w-full inline-flex justify-center my-96'>
+                <p>WELCOME</p>
+                <p className='dot bounce'>.</p>
+            </div>
         </div>
     </div>
   )
