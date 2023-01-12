@@ -6,6 +6,10 @@
     src: url('../public/font/montserrat/Montserrat-VariableFont_wght.ttf');
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     background-color: #000000;
@@ -18,6 +22,14 @@ body {
 .container {
     font-family: Montserrat;
     background-image: linear-gradient(to bottom, #414141, #000000);
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.container::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
 }
 
 .float_container {
@@ -38,10 +50,6 @@ body {
 a {
     color: inherit;
     text-decoration: none;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 .footer {
@@ -175,9 +183,7 @@ a {
     margin: 25rem 0;
 }
 
-
 /* Extra small devices (phones, 600px and down) */
-
 @media only screen and (max-width: 600px) {
     .container p {
         font-size: 50px;
@@ -187,6 +193,16 @@ a {
     }
     .footer p {
         font-size: 10px;
+    }
+    .desk-nav {
+        display: none;
+    }
+    .mob-index {
+        margin-top: 20rem;
+    }
+    .mob-txt {
+        font-size: 0.6rem!important;
+        margin: 6rem 0 0 0;
     }
     @keyframes bounce {
         0% {
@@ -201,33 +217,24 @@ a {
     }
 }
 
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
-
-
 /* @media only screen and (min-width: 600px) {
     ...
 } */
 
 
 /* Medium devices (landscape tablets, 768px and up) */
-
-
 /* @media only screen and (min-width: 768px) {
     ...
 } */
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-
-
 /* @media only screen and (min-width: 992px) {
     ...
 } */
 
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-
 @media only screen and (min-width: 1200px) {
     @keyframes bounce {
         0% {
@@ -245,22 +252,19 @@ a {
     }
 }
 
-
 /* iPhone 12 Pro */
-
-@media (max-height: 844px) {
+@media (max-height: 740px) {
     .sub-container {
-        height: 93.5vh;
+        height: 86vh!important;
+    }
+    .mob-txt {
+        margin-top: 1rem!important;
     }
 }
 
-
-/* iPhone XR */
-
-
-/* 
-@media (min-height: 890px) {
+/* iPhone 12 Pro */
+@media (max-height: 844px) {
     .sub-container {
-        height: 93.5vh;
+        height: 92vh;
     }
-} */
+}
