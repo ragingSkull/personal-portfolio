@@ -8,7 +8,7 @@ export default function AboutMe() {
                     <p>HI</p>
                     <p className='dot bounce'>.</p>
                 </div> */}
-                <p className='text-left !text-base my-40'>
+                <p className='text-left !text-base mt-20 mob-txt'>
                 <code>
                 &#91;&#123;
                 <br />

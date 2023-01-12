@@ -7,7 +7,7 @@ import {
 
 const NaviBar = () => {
     return (
-        <nav className='navbar w-full flex justify-center p-5'>
+        <nav className='navbar w-full flex justify-center p-5 desk-nav'>
             <Link className='right !ml-60 !mr-0' href='/about-me'>
                 About Me
             </Link>
@@ -15,6 +15,7 @@ const NaviBar = () => {
                 <FontAwesomeIcon icon={ faHome } style={{ fontSize: 20, color: "white" }} />
             </Link>
             <Link className='left !ml-0 !mr-60' href=''>
+                Coming Soon
             </Link>
         </nav>
     );
