@@ -281,6 +281,10 @@ a {
         display: inline-block!important;
         position: fixed;
     }
+
+    .sub-container {
+        height: 86.5vh;
+    }
 }
 
 /* iPhone 12 Pro */
@@ -300,7 +304,7 @@ a {
 }
 
 /* iPhone 12 Pro */
-@media (max-height: 844px) {
+@media (max-width: 390px) {
     .sub-container {
         height: 92vh;
     }
