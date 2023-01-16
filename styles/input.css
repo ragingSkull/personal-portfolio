@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
     font-family: Montserrat;
     src: url('../public/font/montserrat/Montserrat-VariableFont_wght.ttf');
@@ -23,17 +24,20 @@ body {
     font-family: Montserrat;
     background-image: linear-gradient(to bottom, #414141, #000000);
     overflow-y: scroll;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
 }
 
-.container::-webkit-scrollbar { /* WebKit */
+.container::-webkit-scrollbar {
+    /* WebKit */
     width: 0;
     height: 0;
 }
 
 .float_container {
-    height: 87vh!important;
+    height: 87vh !important;
     flex-direction: column;
 }
 
@@ -197,29 +201,37 @@ a {
     .container p {
         font-size: 50px;
     }
+
     .sub-container {
         height: 91.5vh;
     }
+
     .footer p {
         font-size: 10px;
     }
+
     .desk-nav {
         display: none;
     }
+
     .mob-index {
         margin-top: 20rem;
     }
+
     .mob-txt {
-        font-size: 0.6rem!important;
+        font-size: 0.6rem !important;
         margin: 6rem 0 0 0;
     }
+
     @keyframes bounce {
         0% {
             transform: translateY(0);
         }
+
         50% {
             transform: translateY(-30px);
         }
+
         100% {
             transform: translateY(0);
         }
@@ -249,13 +261,16 @@ a {
         0% {
             transform: translateY(0);
         }
+
         50% {
             transform: translateY(-60px);
         }
+
         100% {
             transform: translateY(0);
         }
     }
+
     .ho {
         overflow: hidden;
     }
@@ -264,10 +279,16 @@ a {
 /* iPhone 12 Pro */
 @media (max-height: 740px) {
     .sub-container {
-        height: 86vh!important;
+        height: 86vh !important;
     }
+
     .mob-txt {
-        margin-top: 1rem!important;
+        margin-top: 1rem !important;
+    }
+
+    .navbar-mob {
+        display: inline-block!important;
+        position: fixed;
     }
 }
 
@@ -276,4 +297,45 @@ a {
     .sub-container {
         height: 92vh;
     }
+
+    .navbar-mob {
+        display: inline-block!important;
+        position: fixed;
+    }
+}
+
+.navbar-mob {
+    display: none;
+    cursor: pointer;
+}
+
+.menu {
+    font-family: Montserrat;
+    position: absolute;
+    color: #fff;
+    background-color: #3d3c3c;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar1-change {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.bar2-change {
+    opacity: 0;
+}
+
+.bar3-change {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.menu-change {
+    display:block;
 }

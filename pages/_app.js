@@ -1,7 +1,8 @@
 import '../styles/app.css'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import Head from 'next/head'
-import NaviBar from '../components/navi-bar'
+import NavBar from '../components/navbar'
+import NavBarMobile from '../components/navbar-mobile'
 import Footer from '../components/footer'
 import { DefaultSeo } from 'next-seo'
 import { config } from '@fortawesome/fontawesome-svg-core'
@@ -28,7 +29,8 @@ function MyApp({ Component, pageProps, router }) {
         }}
         canonical={url}
     /> 
-    <NaviBar />
+    <NavBar />
+    <NavBarMobile />
     <Component {...pageProps } />
     <Footer />
     </>
