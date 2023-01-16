@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @font-face {
     font-family: Montserrat;
     src: url('../public/font/montserrat/Montserrat-VariableFont_wght.ttf');
@@ -13,7 +12,7 @@
 
 html,
 body {
-    background-color: #000000;
+    background-color: #C9F6FF;
     border: 0;
     padding: 0;
     margin: 0;
@@ -22,7 +21,8 @@ body {
 
 .container {
     font-family: Montserrat;
-    background-image: linear-gradient(to bottom, #414141, #000000);
+    /* background-image: linear-gradient(to bottom, #414141, #000000); */
+    background-image: linear-gradient(180deg, #C9F6FF, #35D6ED);
     overflow-y: scroll;
     scrollbar-width: none;
     /* Firefox */
@@ -37,17 +37,17 @@ body {
 }
 
 .float_container {
-    height: 87vh !important;
+    height: 87vh!important;
     flex-direction: column;
 }
 
 .container p {
     font-size: 100px;
-    color: #ffffff;
+    color: #000000;
 }
 
 .sub-container {
-    height: 85vh;
+    height: 84vh;
     display: flex;
 }
 
@@ -58,15 +58,17 @@ a {
 
 .footer {
     align-items: center;
-    padding: 21px;
-    background-color: #000000;
+    padding: 26px;
+    background-color: #35D6ED;
+    background-image: url('/static/grass.png');
 }
 
 .footer p {
     text-align: center;
     position: relative;
+    font-weight: bold;
     font-family: Montserrat;
-    color: #ffffff;
+    color: #000000;
 }
 
 .footer p:before {
@@ -89,10 +91,14 @@ a {
     position: absolute;
 }
 
+.createdFrom {
+    padding-bottom: 25px;
+}
+
 .navbar {
     font-size: 20px;
     font-family: Montserrat;
-    background-color: rgb(65, 65, 65);
+    background-color: #C9F6FF;
     color: #ffffff;
 }
 
@@ -196,163 +202,103 @@ a {
     margin: 25rem 0;
 }
 
+
 /* Extra small devices (phones, 600px and down) */
+
 @media only screen and (max-width: 600px) {
     .container p {
         font-size: 50px;
     }
-
     .sub-container {
         height: 91.5vh;
     }
-
     .footer p {
         font-size: 10px;
     }
-
     .desk-nav {
         display: none;
     }
-
     .mob-index {
         margin-top: 20rem;
     }
-
     .mob-txt {
-        font-size: 0.6rem !important;
+        font-size: 0.6rem!important;
         margin: 6rem 0 0 0;
     }
-
     @keyframes bounce {
         0% {
             transform: translateY(0);
         }
-
         50% {
             transform: translateY(-30px);
         }
-
         100% {
             transform: translateY(0);
         }
     }
 }
 
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
+
+
 /* @media only screen and (min-width: 600px) {
     ...
 } */
 
 
 /* Medium devices (landscape tablets, 768px and up) */
+
+
 /* @media only screen and (min-width: 768px) {
     ...
 } */
 
 
 /* Large devices (laptops/desktops, 992px and up) */
+
+
 /* @media only screen and (min-width: 992px) {
     ...
 } */
 
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+
 @media only screen and (min-width: 1200px) {
     @keyframes bounce {
         0% {
             transform: translateY(0);
         }
-
         50% {
             transform: translateY(-60px);
         }
-
         100% {
             transform: translateY(0);
         }
     }
-
     .ho {
         overflow: hidden;
     }
 }
 
-@media only screen and (max-width: 420px) {
-    .navbar-mob {
-        display: inline-block!important;
-        position: fixed;
-    }
-}
 
 /* iPhone 12 Pro */
+
 @media (max-height: 740px) {
     .sub-container {
-        height: 86vh !important;
+        height: 86vh!important;
     }
-
     .mob-txt {
-        margin-top: 1rem !important;
-    }
-
-    .navbar-mob {
-        display: inline-block!important;
-        position: fixed;
+        margin-top: 1rem!important;
     }
 }
 
+
 /* iPhone 12 Pro */
+
 @media (max-height: 844px) {
     .sub-container {
         height: 92vh;
     }
-
-    .navbar-mob {
-        display: inline-block!important;
-        position: fixed;
-    }
-}
-
-.navbar-mob {
-    display: none;
-    cursor: pointer;
-}
-
-.menu {
-    font-family: Montserrat;
-    position: absolute;
-    color: #fff;
-    background-color: #3d3c3c;
-}
-
-.menu a {
-    font-size: -webkit-xxx-large;
-    font-family: Montserrat;
-    padding-left:50px;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #fff;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.bar1-change {
-    transform: translate(0, 11px) rotate(-45deg);
-}
-
-.bar2-change {
-    opacity: 0;
-}
-
-.bar3-change {
-    transform: translate(0, -11px) rotate(45deg);
-}
-
-.menu-change {
-    display: block;
-}
-
-.non-display {
-    display: none;
 }

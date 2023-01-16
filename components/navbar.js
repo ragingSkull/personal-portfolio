@@ -5,7 +5,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 
-const NaviBar = () => {
+const NavBar = () => {
     return (
         <nav className='navbar w-full flex justify-center p-5 desk-nav'>
             <Link className='right !ml-60 !mr-0' href='/about-me'>
@@ -21,4 +21,4 @@ const NaviBar = () => {
     );
 }
 
-export default NaviBar
+export default NavBar
