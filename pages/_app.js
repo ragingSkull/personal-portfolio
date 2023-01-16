@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps, router }) {
     <>
     <Head>
         <link rel="icon" href="/static/favicon.png"></link>
-        <title>Leonard</title>
+        <title>RottenEgggs</title>
     </Head>
     <DefaultSeo
         titleTemplate="%s - Leonard"
@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps, router }) {
             locale: 'en_IE',
             url,
             description: 'The personal website of Leonard.',
-            site_name: 'Leonard',
+            site_name: 'RottenEgggs',
             images: [],
         }}
         canonical={url}
