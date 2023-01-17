@@ -1,6 +1,7 @@
 import '../styles/app.css'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import Head from 'next/head'
+import Script from 'next/script';
 import NavBar from '../components/navbar'
 import NavBarMobile from '../components/navbar-mobile'
 import Footer from '../components/footer'
@@ -9,7 +10,7 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 config.autoAddCss = false 
 
 function MyApp({ Component, pageProps, router }) {
-    const url = `https://my-first-spa.vercel.app${router.route}`
+    const url = `https://rottenegggs.com${router.route}`
 
     return ( 
     <>
@@ -17,6 +18,20 @@ function MyApp({ Component, pageProps, router }) {
         <link rel="icon" href="/static/favicon.png"></link>
         <title>RottenEgggs</title>
     </Head>
+    {/* Google tag (gtag.js) */}
+    <Script 
+        src="https://www.googletagmanager.com/gtag/js?id=G-C773LE09VK"
+        strategy="afterInteractive"
+    />
+    <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-C773LE09VK');
+        `}
+    </Script>
     <DefaultSeo
         titleTemplate="%s - Leonard"
         openGraph={{
