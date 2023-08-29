@@ -8,7 +8,7 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 config.autoAddCss = false 
 
 function MyApp({ Component, pageProps, router }) {
-    const url = `https://rottenegggs.com${router.route}`
+    const url = `https://rottenegg.dev${router.route}`
 
     return ( 
     <>
@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps, router }) {
             locale: 'en_IE',
             url,
             description: 'The personal website of Leonard.',
-            site_name: 'RottenEgggs',
+            site_name: 'rotten • egg',
             images: [],
         }}
         canonical={url}
