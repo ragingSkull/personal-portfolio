@@ -11,55 +11,20 @@
     box-sizing: border-box;
 }
 
-html,
 body {
-    background-color: #000000;
-    border: 0;
-    padding: 0;
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-.container {
     font-family: Montserrat;
-    background-image: linear-gradient(to bottom, #414141, #000000);
-    overflow-y: scroll;
-    scrollbar-width: none;
-    /* Firefox */
-    -ms-overflow-style: none;
-    /* Internet Explorer 10+ */
-}
-
-.container::-webkit-scrollbar {
-    /* WebKit */
-    width: 0;
-    height: 0;
-}
-
-.float_container {
-    height: 87vh !important;
-    flex-direction: column;
-}
-
-.container p {
-    font-size: 100px;
-    color: #ffffff;
-}
-
-.sub-container {
-    height: 85vh;
-    display: flex;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
+    background-color: #171717;
+    font-size: 1rem;
+    position: relative;
+    min-height: 100vh;
+    padding: 1.25rem;
 }
 
 .footer {
     align-items: center;
-    padding: 21px;
-    background-color: #000000;
+    background-color: #171717;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer p {
@@ -87,33 +52,6 @@ a {
     right: 0;
     top: 50%;
     position: absolute;
-}
-
-.navbar {
-    font-size: 20px;
-    font-family: Montserrat;
-    background-color: rgb(65, 65, 65);
-    color: #ffffff;
-}
-
-.navbar:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.navbar a {
-    float: left;
-    margin: 0px 10%;
-    transition: transform .2s;
-}
-
-.navbar a:hover {
-    -ms-transform: scale(1.5);
-    /* IE 9 */
-    -webkit-transform: scale(1.5);
-    /* Safari 3-8 */
-    transform: scale(1.5);
 }
 
 .center {
@@ -198,10 +136,6 @@ a {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .container p {
-        font-size: 50px;
-    }
-
     .sub-container {
         height: 91.5vh;
     }
@@ -222,95 +156,31 @@ a {
         font-size: 0.6rem !important;
         margin: 6rem 0 0 0;
     }
-
-    @keyframes bounce {
-        0% {
-            transform: translateY(0);
-        }
-
-        50% {
-            transform: translateY(-30px);
-        }
-
-        100% {
-            transform: translateY(0);
-        }
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {
-    ...
-} */
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {
-    ...
-} */
-
-
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {
-    ...
-} */
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    @keyframes bounce {
-        0% {
-            transform: translateY(0);
-        }
-
-        50% {
-            transform: translateY(-60px);
-        }
-
-        100% {
-            transform: translateY(0);
-        }
-    }
-
-    .ho {
-        overflow: hidden;
-    }
 }
 
 @media only screen and (max-width: 420px) {
     .navbar-mob {
-        display: inline-block!important;
+        display: inline-block !important;
         position: fixed;
-    }
-
-    .sub-container {
-        height: 86.5vh;
     }
 }
 
 /* iPhone 12 Pro */
 @media (max-height: 740px) {
-    .sub-container {
-        height: 86vh !important;
-    }
-
     .mob-txt {
         margin-top: 1rem !important;
     }
 
     .navbar-mob {
-        display: inline-block!important;
+        display: inline-block !important;
         position: fixed;
     }
 }
 
 /* iPhone 12 Pro */
 @media (max-width: 390px) {
-    .sub-container {
-        height: 92vh;
-    }
-
     .navbar-mob {
-        display: inline-block!important;
+        display: inline-block !important;
         position: fixed;
     }
 }
@@ -323,16 +193,18 @@ a {
     font-family: Montserrat;
     position: absolute;
     color: #fff;
-    background-color: #3d3c3c;
+    background-color: #171717;
 }
 
 .menu a {
     font-size: -webkit-xxx-large;
     font-family: Montserrat;
-    padding-left:50px;
+    padding-left: 50px;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     background-color: #fff;
