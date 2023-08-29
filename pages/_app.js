@@ -2,21 +2,19 @@ import '../styles/app.css'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import Head from 'next/head'
 import Script from 'next/script';
-import NavBar from '../components/navbar'
 import NavBarMobile from '../components/navbar-mobile'
-import Footer from '../components/footer'
 import { DefaultSeo } from 'next-seo'
 import { config } from '@fortawesome/fontawesome-svg-core'
 config.autoAddCss = false 
 
 function MyApp({ Component, pageProps, router }) {
-    const url = `https://rottenegggs.com${router.route}`
+    const url = `https://rottenegg.dev${router.route}`
 
     return ( 
     <>
     <Head>
         <link rel="icon" href="/static/favicon.png"></link>
-        <title>RottenEgggs</title>
+        <title>rotten • egg</title>
     </Head>
     {/* Google tag (gtag.js) */}
     <Script 
@@ -39,15 +37,13 @@ function MyApp({ Component, pageProps, router }) {
             locale: 'en_IE',
             url,
             description: 'The personal website of Leonard.',
-            site_name: 'RottenEgggs',
+            site_name: 'rotten • egg',
             images: [],
         }}
         canonical={url}
-    /> 
-    <NavBar />
-    <NavBarMobile />
+    />
+    {/* <NavBarMobile /> */}
     <Component {...pageProps } />
-    <Footer />
     </>
     );
 }
