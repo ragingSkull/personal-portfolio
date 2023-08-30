@@ -1,10 +1,10 @@
 import '../styles/app.css'
 import '@fortawesome/fontawesome-svg-core/styles.css'
-import Head from 'next/head'
-import Script from 'next/script';
-import NavBarMobile from '../components/navbar-mobile'
+import Header from '../components/header'
+import Script from 'next/script'
 import { DefaultSeo } from 'next-seo'
 import { config } from '@fortawesome/fontawesome-svg-core'
+
 config.autoAddCss = false 
 
 function MyApp({ Component, pageProps, router }) {
@@ -12,11 +12,10 @@ function MyApp({ Component, pageProps, router }) {
 
     return ( 
     <>
-    <Head>
-        <link rel="icon" href="/static/favicon.png"></link>
-        <title>rotten • egg</title>
-    </Head>
-    {/* Google tag (gtag.js) */}
+    <Header
+        page = "home"
+        description = "Explore projects. Engaging blogs. Embark on a software development journey."
+    />
     <Script 
         src="https://www.googletagmanager.com/gtag/js?id=G-C773LE09VK"
         strategy="afterInteractive"
@@ -31,18 +30,18 @@ function MyApp({ Component, pageProps, router }) {
         `}
     </Script>
     <DefaultSeo
-        titleTemplate="%s - Leonard"
+        titleTemplate="%s - rottenegg"
         openGraph={{
             type: 'website',
             locale: 'en_IE',
             url,
+            title: 'rotten • egg',
             description: 'The personal website of Leonard.',
             site_name: 'rotten • egg',
             images: [],
         }}
         canonical={url}
     />
-    {/* <NavBarMobile /> */}
     <Component {...pageProps } />
     </>
     );
