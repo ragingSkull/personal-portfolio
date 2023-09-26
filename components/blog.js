@@ -3,7 +3,7 @@ import React from 'react';
 const Blog = () => {
     return (
         <div className="mt-10">
-            <h1 className="text-[#ffffff] text-3xl">Blog</h1>
+            <h1 className="text-[#ffffff] text-3xl" style={{ fontFamily: 'Kong' }}>Blog</h1>
             <div className="mt-8 flex flex-col">
                 <div className="flex justify-between items-center pb-2">
                     <h2 className="text-[#ffffff] text-lg">
