@@ -1,39 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 const Projects = () => {
-    const [projects, setProjects] = useState([]);
-
-    useEffect(() => {
-        const apiUrl = `${process.env.NEXT_PUBLIC_ADMIN_URL}/api/projects`;
-
-        fetch(apiUrl)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! Status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then(data => {
-                const limitedProjects = data.data.slice(0, 6);
-                setProjects(limitedProjects);
-            })
-            .catch(error => {
-                console.error("Error:", error);
-            });
-    }, []);
-
     return (
         <div className="mt-10">
-            <h1 className="text-[#ffffff] text-3xl" style={{ fontFamily: 'Kong' }}>Projects</h1>
+            <h1 className="text-[#ffffff] text-2xl" style={{ fontFamily: 'Kong' }}>Projects</h1>
             <div className="grid grid-cols-3 gap-4 mt-4">
-                {projects.map(project => (
-                    <div className="p-4" key={project.id}>
-                        <h2 className="text-[#ffffff] text-lg">
-                            <a href={project.attributes.URL} target='_blank' rel='noreferrer'>{project.attributes.Title}</a>
-                        </h2>
-                        <p className="text-[#737373]">{project.attributes.Description}</p>
-                    </div>
-                ))}
+                <div className="lg:p-4">
+                    <h2 className="text-[#ffffff] text-lg">
+                        <a href="https://github.com/ragingSkull/personal-portfolio" target='_blank' rel='noreferrer'>rotten . egg</a>
+                    </h2>
+                    <p className="text-[#737373]">my personal portfolio</p>
+                </div>
+                <div className="lg:p-4">
+                    <h2 className="text-[#ffffff] text-lg">
+                        <a href="https://dearnestle.com.my" target='_blank' rel='noreferrer'>DearNestle MY</a>
+                    </h2>
+                    <p className="text-[#737373]">nutrition platform</p>
+                </div>
+                <div className="lg:p-4">
+                    <h2 className="text-[#ffffff] text-lg">
+                        <a href="https://dearnestle.com.sg" target='_blank' rel='noreferrer'>DearNestle SG</a>
+                    </h2>
+                    <p className="text-[#737373]">nutrition platform</p>
+                </div>
+                <div className="lg:p-4">
+                    <h2 className="text-[#ffffff] text-lg">
+                        <a>coming soon</a>
+                    </h2>
+                    <p className="text-[#737373]">stay tune</p>
+                </div>
             </div>
         </div>
     );
