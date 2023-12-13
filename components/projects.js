@@ -25,6 +25,12 @@ const Projects = () => {
                 </div>
                 <div className="lg:p-4">
                     <h2 className="text-[#ffffff] text-lg">
+                        <a href="https://packtica.com" target='_blank' rel='noreferrer'>Packtica</a>
+                    </h2>
+                    <p className="text-[#737373]">packaging & label</p>
+                </div>
+                <div className="lg:p-4">
+                    <h2 className="text-[#ffffff] text-lg">
                         <a>coming soon</a>
                     </h2>
                     <p className="text-[#737373]">stay tune</p>
