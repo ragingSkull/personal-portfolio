@@ -2,7 +2,7 @@ import React from 'react';
 
 const Projects = () => {
     return (
-        <div className="mt-10">
+        <div className="mt-14">
             <h1 className="text-[#ffffff] text-2xl" style={{ fontFamily: 'Kong' }}>Projects</h1>
             <div className="grid grid-cols-3 gap-4 mt-4">
                 <div className="lg:p-4">
