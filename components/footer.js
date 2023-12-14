@@ -11,10 +11,10 @@ const Footer = () => {
             <div>
                 <p>rotten • egg</p></div>
             <div className='flex'>
-                <a href='https://www.facebook.com/rottenegggs/' target="_blank" rel="noreferrer"><div className='pl-2.5' dangerouslySetInnerHTML={{ __html: facebook }} /></a>
-                <a href='https://github.com/ragingSkull' target="_blank" rel="noreferrer"><div className='pl-2.5' dangerouslySetInnerHTML={{ __html: github }} /></a>
-                <a href='https://www.fiverr.com/leonard_lim' target="_blank" rel="noreferrer"><div className='pl-2.5' dangerouslySetInnerHTML={{ __html: fiverr }} /></a>
-                <a href='https://wa.me/60168339753' target="_blank" rel="noreferrer"><div className='pl-2.5' dangerouslySetInnerHTML={{ __html: whatsapp }} /></a>
+                <a href='https://www.facebook.com/rottenegggs/' target="_blank" rel="noreferrer"><div className='pl-2.5 w-16 h-16' dangerouslySetInnerHTML={{ __html: facebook }} /></a>
+                <a href='https://github.com/ragingSkull' target="_blank" rel="noreferrer"><div className='pl-2.5 w-16 h-16' dangerouslySetInnerHTML={{ __html: github }} /></a>
+                <a href='https://www.fiverr.com/leonard_lim' target="_blank" rel="noreferrer"><div className='pl-2.5 w-16 h-16' dangerouslySetInnerHTML={{ __html: fiverr }} /></a>
+                <a href='https://wa.me/60168339753' target="_blank" rel="noreferrer"><div className='pl-2.5 w-16 h-16' dangerouslySetInnerHTML={{ __html: whatsapp }} /></a>
             </div>
         </div>
     );
