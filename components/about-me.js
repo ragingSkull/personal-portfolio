@@ -3,7 +3,7 @@ import React from 'react';
 
 const AboutMe = () => {
     return (
-        <div>
+        <div className="text-justify">
             <p className="text-[#ffffff] text-sm mt-5 leading-10">
                 I&#39;m Leonard, a passionate programmer on a mission to turn innovative ideas into powerful digital solutions. 
                 With a deep love for coding and a knack for problem-solving, I&#39;m here to share my journey in the world of software development.
