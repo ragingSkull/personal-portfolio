@@ -7,7 +7,7 @@ const Blog = () => {
             <div className="mt-8 flex flex-col">
                 <div className="flex justify-between items-center pb-2">
                     <h2 className="text-[#ffffff] text-lg">
-                        <a href="">coming soon</a>
+                        <p>coming soon</p>
                     </h2>
                     <span className="text-[#737373]">Aug 29, 2023</span>
                 </div>
